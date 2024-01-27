@@ -22,6 +22,7 @@ export interface Config {
     media: Media
     categories: Category
     users: User
+    posts: Posts
     redirects: Redirect
     'payload-preferences': PayloadPreference
     'payload-migrations': PayloadMigration
@@ -399,6 +400,11 @@ export interface Order {
     | null
   updatedAt: string
   createdAt: string
+}
+export interface Posts {
+  id: string
+  name?: string
+  publishedOn?: string
 }
 export interface User {
   id: string
